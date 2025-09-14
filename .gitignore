@@ -1,55 +1,37 @@
-# Prerequisites
-*.d
+# Build artifacts
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
 
-# Object files
+# VS Code settings and workspace files
+.vscode/
+*.code-workspace
+
+# Object and binary files
 *.o
-*.ko
 *.obj
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.bin
 *.hex
+*.map
+*.uf2
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Backup and temporary files
+*~
+*.swp
+*.bak
+*.tmp
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# SDK-generated files
+generated/
+*.generated.*
 
-# debug information files
-*.dwo
+# Logs
+*.log
+
+# Python virtual environments (if used for tooling)
+venv/
+__pycache__/
+*.pyc
