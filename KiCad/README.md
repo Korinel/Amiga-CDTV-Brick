@@ -1,4 +1,13 @@
-# 📖 Electronics Design for the CDTV IR Controller
+
+
+# 📖 Electronics Design for the CDTV IR Joystick Controller
+
+![CDTV IR Controller Schematic](CDTV-bricknaked.png)
+
+> **N.B.** I am *not* an electrical engineer — I’m a software/reverse engineer by trade.  
+> This project is a learning exercise, so there may be mistakes or sub-optimal choices.  
+> The design was developed with the help of my good friend ChatGPT 🙂  
+
 
 This README describes the **electronics design** for a modern replacement of the **Commodore CDTV infrared controllers**.  
 It focuses on the hardware built around a **Raspberry Pi Pico (RP2040 or RP2350)** microcontroller, which reads two standard DE-9 joysticks and transmits their states to the CDTV via an **infrared LED driver circuit**.  
