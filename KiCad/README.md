@@ -187,8 +187,6 @@ Since the original CD1200 never offered mouse inputs on its DE-9 ports, this des
 
 For builders who want to experiment with adding mouse support, here are the key details of the **CDTV mouse protocol** (used by CD-1252 IR and CD-1253 wired mice):
 
-## 📡 CDTV Mouse Serial Protocol
-
 The CDTV mouse (CD-1252 IR / CD-1253 wired) uses a proprietary asynchronous serial protocol.  
 
 - **Frame structure**:  
