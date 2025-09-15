@@ -50,7 +50,7 @@ However:
 
 ## 📐 Schematic
 
-![CDTV IR Controller Schematic](KiCad/schematic.png)
+![CDTV IR Controller Schematic](schematic.png)
 
 
 ---
