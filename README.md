@@ -2,20 +2,19 @@
 ## Two-player IR joystick interface
 
 ![Brick from CES](images/CDTV-brick.png)
-*The origianl Brick*
+*The original Brick*
 
 The circled **Commodore CDTV Brick** was a 1990s CDTV input device that sadly never made it to retail shelves. Instead, it appears that its functionality was integrated into the **Commodore CDTV CD1200** (below). The design of this Brick is entirely based on reverse engineering the protocols from the **CD1200 Trackball**, **CD1252/CD1253 mice**, **Brickette**, and the **CDTV Remote**.
 
 ![CD1200](images/CDTV-trkball.png)
 *The CD1200, obtain via a mortgage!!*
 
-## Project Overview
 
 ![CDTV Setup](images/CDTV-joy.png)
 *The Prototype Brick!*
 
 ## Project Overview
-This  purpose of this project is to help makers design and build new devices, as the original retro mice, remote and trackerball command heavy prices second hand so there is an eager market for cheaper alternatives, without these input devices the CDTVs I fear will end up in landfil! 
+This  purpose of this project is to help makers design and build new devices, as the original retro mice, remote and trackerball command heavy prices second hand so there is an eager market for cheaper alternatives, without these input devices the CDTVs I fear will end up in landfill! 
 
 The Pico project simply takes joystick input over GPIO, converts it to the IR protocol, and transmits it to an IR LED via a MOSFET. The code in this repro is for the Raspberry Pi Pico, both the RP2040 or newer RP2350 work fine. Visual Studio Code and the Offical Raspberry Pi Pico Extension were used to build the code. Everything is vanilla so should be easy enough to compile. The implementation is intentionally minimal for clarity, to enable ports to other MCUs, but there are known limitations:
 
