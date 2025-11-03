@@ -23,6 +23,7 @@
 *.swp
 *.bak
 *.tmp
+.DS_Store
 
 # SDK-generated files
 generated/

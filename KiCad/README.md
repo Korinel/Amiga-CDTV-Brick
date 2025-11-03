@@ -59,6 +59,8 @@ However:
 
 ## 📐 Schematic
 
+**WARNING : there is an error in the schematics. You need to reverse the polarity of the IR LED (D_IR1)**
+
 ![CDTV IR Controller Schematic](schematic.png)
 
 

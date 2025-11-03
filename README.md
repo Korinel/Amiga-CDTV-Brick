@@ -75,6 +75,14 @@ The **Brickette** was a wired device similar to the CD1200 using a nearly identi
 
 The Brickette is approximately **25% more latent** than the CD1200. This is likely because it transmits at the slower clock rate required for mouse support, which also operates at 31 frames per second. The Brickette also does **not** send the four “end of transmission” frames, leaving the CDTV unaware when the user stopped pressing joystick directions. This behaviour can be observed in **Amiga Test Kit**.
 
+## How to build & install
+
+1. Building PCB documentation is there [KiCad/README.md](KiCad/README.md). You'll find the gerber file, schematics and the BOM. **WARNING : there is an error in the schematics. You need to reverse the polarity of the IR LED**
+2. Open current project in VSCode.
+3. `F5` to build and debug (if you've got a Raspberry Pi Debug Probe) or `F7` to just build.
+4. Then plug you're Raspberry Pico on your computer and copy into it the file `build/Brick.uf2`, it should disconnect automatically.
+5. That's all.
+
 ## Acknowledgements
 
 This project was inspired by the excellent research and historical insights shared on [CDTV Land](https://cdtvland.com/2021/03/07/cdtv-brick-prototype/) regarding the elusive CDTV Brick prototype. 
