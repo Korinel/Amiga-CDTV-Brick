@@ -1,7 +1,7 @@
 # CDTV IR Controller - Release Notes
 
 ## Version 0.3
-**Release Date:** [Current Date]
+**Release Date:** [2025-11-08]
 
 ### Bug Fixes
 - **Critical Fix: IR LED Polarity Correction**
@@ -11,23 +11,23 @@
   - **Impact:** Previous versions (v0.1 and v0.2) required the IR LED to be installed with reversed polarity to function correctly. Version 0.3 allows correct installation following component markings (flat edge = cathode)
 
 ### Acknowledgements
-Special thanks to **chrisblown** and **youenchene** for identifying and reporting this critical polarity issue! Their feedback from building prototypes helped catch this error before wider production.
+Special thanks to **chrisblown** and **youenchene** for identifying and reporting this critical polarity issue! 
 
 ---
 
 ## Version 0.2
+**Release Date:** [2025-07-18]
+
+
 
 ### Features Added
-- **SW1 Debug Switch:** Added power switch for easier development and debugging
+- **SW1 Power Switch:** Added a power switch to save on battery power
 - **Pico Debug Header:** Exposed TX, RX, and GND pins on Raspberry Pi Pico for serial debugging and programming access
-
-### Improvements
-- Enhanced development workflow with accessible debug pins
-- Improved power management during development
 
 ---
 
 ## Version 0.1
+**Release Date:** [2025-05-15]
 
 ### Initial Release
 - Original CDTV IR Controller design
