@@ -28,6 +28,22 @@ The Pico project simply takes joystick input over GPIO, converts it to the IR pr
 
 The Brick performs exceptionally well, it enables **wireless two-player simultaneous Amiga gameplay**, testing on titles such as *Battle Squadron*, *SWIV*, *Project X*, *Zool*, and *Superfrog*—all played well without noticeable lag. More importantly, it avoids the need to open up the CDTV, remove chips, or pay upwards of **$1000 for a CD1200 Trackball**.
 
+## Building Your Own
+
+### PCB Manufacturing
+The `KiCad` folder contains gerber files ready for PCB fabrication. Send these to your preferred manufacturer (JLCPCB, PCBWay, etc.), or use the schematic to build your own, the circuit is simple enough to prototype on a breadboard.
+
+### 3D Printed Enclosure
+3MF/STL files for the housing and faceplate are in the `3DPrint` folder. They're also available on [MakerWorld](https://makerworld.com/en/models/1804520-commodore-cdtv-2-joystick-ir-transmitter-enclosure).
+
+### Firmware Installation
+1. Install VSCode with the official Raspberry Pi Pico extension
+2. Clone this repository
+3. Build the project using the Pico SDK
+4. Flash to your Pico via either:
+   - USB mass storage mode (drag and drop the .uf2 file)
+   - Debug probe using SWD pins
+
 ## Joystick Protocol
 
 The joystick protocol appears to be *undocumented!* but here is the specification for use in your own devices:
@@ -51,7 +67,7 @@ Both mouse and joystick protocols use the same bit encoding:
 - **Header**: `1100` mark followed by `375` µs space  
 - **Payload**: 25 bits total   
   - `1` flag for joystick (0 = joystick, 1 = mouse)  
-  - `12` bits for two joystick inputs: F2, F1, U, D, L, R, F2, F1, U, D, L, R  
+  - `12` bits for two joystick inputs: (P1) F2, F1, R, L, D, U, (P2) F2, F1, R, L, D, U  
   - `12` bits for the inverse of the above, acting as a primitive check bit  
 - **Footer**: `800` µs space (no specific footer signal)  
 - **Frame duration**: ~24,150 µs (≈41 frames per second)  
