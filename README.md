@@ -22,8 +22,6 @@ The Pico project simply takes joystick input over GPIO, converts it to the IR pr
 2. **No defensive programming**: There is no error handling or debug output—failures may go unnoticed.
 3. **Battery conservation**: No power-saving measures are implemented. The device does not stop timers or reduce CPU/PWM load during inactivity.
 
-
-
 ## Results!
 
 The Brick performs exceptionally well, it enables **wireless two-player simultaneous Amiga gameplay**, testing on titles such as *Battle Squadron*, *SWIV*, *Project X*, *Zool*, and *Superfrog*—all played well without noticeable lag. More importantly, it avoids the need to open up the CDTV, remove chips, or pay upwards of **$1000 for a CD1200 Trackball**.
