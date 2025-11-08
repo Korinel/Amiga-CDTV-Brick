@@ -42,6 +42,8 @@ The `KiCad` folder contains gerber files ready for PCB fabrication. Send these t
    - USB mass storage mode (drag and drop the .uf2 file)
    - Debug probe using SWD pins
 
+Good luck!
+
 ## Joystick Protocol
 
 The joystick protocol appears to be *undocumented!* but here is the specification for use in your own devices:
