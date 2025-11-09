@@ -56,9 +56,11 @@ static const uint32_t ir_interframe_gap_us = 800;       // 32 * 25us
 // =============================================================================
 // GPIO and state definitions
 // =============================================================================
+// Read joystick GPIO pins in CDTV defined order
 static const uint8_t gpio_pins[] = {
-    JOY1_UP, JOY1_DOWN, JOY1_LEFT, JOY1_RIGHT, JOY1_FIRE1, JOY1_FIRE2,
-    JOY2_UP, JOY2_DOWN, JOY2_LEFT, JOY2_RIGHT, JOY2_FIRE1, JOY2_FIRE2};
+    JOY2_UP, JOY2_DOWN, JOY2_LEFT, JOY2_RIGHT, JOY2_FIRE1, JOY2_FIRE2,
+    JOY1_UP, JOY1_DOWN, JOY1_LEFT, JOY1_RIGHT, JOY1_FIRE1, JOY1_FIRE2
+   };
 
 static const size_t num_gpio_pins = sizeof(gpio_pins) / sizeof(gpio_pins[0]);
 
